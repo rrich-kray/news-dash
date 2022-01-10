@@ -1,0 +1,93 @@
+:root {
+  --purple: rgb(51, 42, 129);
+  --blue: rgb(27, 79, 156);
+  --green: rgb(22, 100, 12);
+  --yellow: rgb(185, 202, 34);
+  --red: rgb(226, 41, 41);
+  --orange: rgb(168, 119, 26);
+  --white: rgb(233, 216, 216);
+  --teal: rgb(29, 131, 105);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-teal {
+  background-color: var(--teal);
+}
+
+header {
+  height: 20vh;
+  background-color: teal;
+}
+header .search-box {
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+header .search-box input {
+  margin: 0 auto;
+  width: 90%;
+  border: none;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-container .grid-item {
+  border: 1px solid black;
+  padding: 10px;
+  transition: 250ms;
+}
+.grid-container .grid-item .author {
+  font-style: italic;
+}
+.grid-container .grid-item h3, .grid-container .grid-item .author, .grid-container .grid-item .content, .grid-container .grid-item a {
+  text-align: center;
+}
+.grid-container .grid-item:hover {
+  transition: 250ms;
+  translate: scale(1.5);
+}
+
+.grid-col-span-1 {
+  grid-column: span 1;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.grid-col-span-3 {
+  grid-column: span 3;
+}
+
+/*# sourceMappingURL=styles.css.map */
